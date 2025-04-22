@@ -1,0 +1,38 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="suite" verbose="10" id="AGT-0BCA332F-A809-3A35-601C-47ED4D29212D" version="ats2">
+  <parameter name="IT_CUF_ite" value="iteration"/>
+  <parameter name="CPG_CUF_cpg" value="campaign"/>
+  <parameter name="TS_CUF_ts" value="testsuite"/>
+  <parameter name="TC_CUF_tc" value="testcase"/>
+  <parameter name="DS_param" value="dsvalue1"/>
+  <parameter name="DSNAME" value="dataset1"/>
+  <parameter name="webp.image.format" value="false"/>
+  <parameter name="ats.suite.date.order" value=""/>
+  <parameter name="ats.suite.description" value=""/>
+  <parameter name="ats.log.level" value="all"/>
+  <test name="chrome_ko">
+    <classes>
+      <class name="chrome_ko"/>
+    </classes>
+  </test>
+  <test name="chrome_ok">
+    <classes>
+      <class name="chrome_ok"/>
+    </classes>
+  </test>
+  <test name="firefox_ko">
+    <classes>
+      <class name="firefox_ko"/>
+    </classes>
+  </test>
+  <test name="firefox_ok">
+    <classes>
+      <class name="firefox_ok"/>
+    </classes>
+  </test>
+  <test name="firefox_param_com">
+    <classes>
+      <class name="firefox_param_com"/>
+    </classes>
+  </test>
+</suite>

@@ -1,0 +1,11 @@
+description: |
+    Agilitest web testing project. Target the Squash Test Factory documentation.
+    Contains some tests on Firefox and some on Chrome. Also contains tests with 
+    and without parameters.
+
+tags:
+- web
+- firefox
+- chrome
+- parameters
+- no_parameters

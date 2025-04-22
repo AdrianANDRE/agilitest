@@ -1,0 +1,19 @@
+[ats-header]
+
+author -> NX-DOMAIN\kung
+created -> 2021-04-07T17:01:49
+modified-at -> 2025-04-18T11:44:50
+modified-by -> NXQLX374:aandre:UNDEFINED
+
+[ats-variables]
+
+
+[ats-actions]
+
+channel-start -> chrome_ko_channel -> chrome
+goto-url -> https://squash-tf.readthedocs.io/en/latest/
+check-property -> title = Welcome to Squash TF components documentation! — Squash TF components documentation
+check-property -> href = ./../../projects/runner-java-junit -> a [text = Squash TF Java Junit Runner]
+click -> a [text = Squash TF Java Junit Runner]
+check-property -> text = Squash TF Java Cucumber Runner -> li [@index = 2] -> ul -> div [aria-label = breadcrumbs navigation]
+channel-close -> chrome_ko_channel

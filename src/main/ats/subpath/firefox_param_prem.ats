@@ -1,0 +1,21 @@
+[ats-header]
+
+author -> NX-DOMAIN\kung
+created -> 2021-04-07T17:58:46
+modified-at -> 2025-04-18T11:44:37
+modified-by -> NXQLX374:aandre:UNDEFINED
+
+[ats-variables]
+
+var -> runnerName
+
+[ats-actions]
+
+channel-start -> firefox_param_prem_channel -> firefox
+goto-url -> https://squash-tf.readthedocs.io/en/latest/
+call-subscript -> java://getRunnerNamePrem => runnerName -> #params -> $env(TC_CUF_tc) -> $env(TS_CUF_ts) -> $env(CPG_CUF_cpg) -> $env(IT_CUF_ite) -> $env(DSNAME) -> $env(DS_param)
+check-property -> title = Welcome to Squash TF components documentation! — Squash TF components documentation
+check-property -> href = ./../../projects/runner-java-junit -> a [text = Squash TF Java Junit Runner]
+click -> a [text = Squash TF Java Junit Runner]
+check-property -> text = $var(runnerName) -> li [@index = 2] -> ul -> div [aria-label = breadcrumbs navigation]
+channel-close -> firefox_param_prem_channel
