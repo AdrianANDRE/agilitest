@@ -2,7 +2,7 @@
 
 author -> NX-DOMAIN\kung
 created -> 2021-04-07T17:08:26
-modified-at -> 2025-04-18T11:44:50
+modified-at -> 2025-04-22T16:05:36
 modified-by -> NXQLX374:aandre:UNDEFINED
 
 [ats-variables]
@@ -11,7 +11,7 @@ modified-by -> NXQLX374:aandre:UNDEFINED
 [ats-actions]
 
 channel-start -> firefox_channel -> firefox
-goto-url -> https://squash-tf.readthedocs.io/en/latest/
+goto-url -> $env(DS_url)
 check-property -> title = Welcome to Squash TF components documentation! — Squash TF components documentation
 check-property -> href = ./../../projects/runner-java-junit -> a [text = Squash TF Java Junit Runner]
 click -> a [text = Squash TF Java Junit Runner]
