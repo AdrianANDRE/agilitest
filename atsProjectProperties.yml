@@ -1,0 +1,12 @@
+variables:
+  suites: suite
+  domain: squash.tfauto
+  name: agilitestDocCheck
+  description: ATS project created with Agilitest Editor
+  scriptPrefix: Tc
+  logsType:
+    -self-closing: 'true'
+  version: 0.0.1
+  useProjectDomain: 'false'
+  uuid: 0FD8E230-1839-5F10-3119-B5BF95D7E455
+  useMaven: 'false'
